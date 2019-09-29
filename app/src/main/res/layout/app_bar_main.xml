@@ -2,6 +2,7 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.matiastibaldo.zattijoven2019.MainActivity">
@@ -14,20 +15,32 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:background="@color/headerLayout"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <!--        <android.support.design.widget.TabLayout-->
+        <!--            android:id="@+id/tabs"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#9C27B0"-->
+<!--            app:srcCompat="@drawable/portada_zatti_vertical" />-->
 
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
 
-<!--    <android.support.design.widget.FloatingActionButton-->
-<!--        android:id="@+id/fab"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="bottom|end"-->
-<!--        android:layout_margin="@dimen/fab_margin"-->
-<!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+
+    <!--    <android.support.design.widget.FloatingActionButton-->
+    <!--        android:id="@+id/fab"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom|end"-->
+    <!--        android:layout_margin="@dimen/fab_margin"-->
+    <!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
 
 </android.support.design.widget.CoordinatorLayout>
