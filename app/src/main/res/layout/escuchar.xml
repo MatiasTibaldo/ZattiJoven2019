@@ -6,9 +6,9 @@
     tools:context=".Fragmentos.Escuchar">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfViewEscuchar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ESCUCHAR" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

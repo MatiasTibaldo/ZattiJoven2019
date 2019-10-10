@@ -6,9 +6,9 @@
     tools:context=".Fragmentos.Convertirnos">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfViewConvertirnos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CONVERTIRNOS" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

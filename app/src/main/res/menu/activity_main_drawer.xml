@@ -8,13 +8,13 @@
                 android:icon="@drawable/ic_calendar"
                 android:title="Cronograma"/>
             <item
-                android:id="@+id/nav_canciones"
+                android:id="@+id/nav_cancionero_animacion"
                 android:icon="@drawable/ic_playlist"
-                android:title="Canciones"/>
+                android:title="Cancionero animación"/>
             <item
-                android:id="@+id/nav_novedades"
-                android:icon="@drawable/ic_novedades"
-                android:title="Novedades" />
+                android:id="@+id/nav_cancionero_meditacion"
+                android:icon="@drawable/ic_playlist"
+                android:title="Cancionero reflexión" />
     </group>
     <item android:title="PreEncuentros">
         <menu>
@@ -37,32 +37,32 @@
         <menu>
             <item
                 android:id="@+id/nav_fascinar"
-                android:icon="@drawable/ic_happy_emoji"
+                android:icon="@drawable/ic_fascinar"
                 android:title="Fascinar..."/>
             <item
                 android:id="@+id/nav_escuchar"
-                android:icon="@drawable/ic_escuchar_emoji"
+                android:icon="@drawable/ic_escuchar"
                 android:title="Escuchar..." />
             <item
                 android:id="@+id/nav_discernir"
-                android:icon="@drawable/ic_books_emoji"
+                android:icon="@drawable/ic_discernir"
                 android:title="Discernir..." />
             <item
                 android:id="@+id/nav_convertirnos"
-                android:icon="@drawable/ic_food_emoji"
+                android:icon="@drawable/ic_convertirnos"
                 android:title="Convertir(nos)..." />
         </menu>
     </item>
-    <item android:title="Lugares">
+    <item android:title="Oraciones">
         <menu>
             <item
-                android:id="@+id/nav_map_arn"
-                android:icon="@drawable/ic_map_arn"
-                android:title="Argentina Norte Salesiana"/>
+                android:id="@+id/nav_oracion1"
+                android:icon="@drawable/ic_pray"
+                android:title="Oración Sabado Mañana"/>
             <item
-                android:id="@+id/nav_map_tucuman"
-                android:icon="@drawable/ic_map_tucuman"
-                android:title="Tucumán" />
+                android:id="@+id/nav_oracion2"
+                android:icon="@drawable/ic_pray"
+                android:title="Testimonio Santidad Juvenil" />
         </menu>
     </item>
 </menu>

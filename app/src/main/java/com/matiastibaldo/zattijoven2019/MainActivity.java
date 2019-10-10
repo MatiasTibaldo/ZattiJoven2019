@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.matiastibaldo.zattijoven2019.Fragmentos.Canciones;
+import com.matiastibaldo.zattijoven2019.Fragmentos.CancioneroAnimacion;
 import com.matiastibaldo.zattijoven2019.Fragmentos.Convertirnos;
 import com.matiastibaldo.zattijoven2019.Fragmentos.Cronograma;
 import com.matiastibaldo.zattijoven2019.Fragmentos.Discernir;
@@ -21,9 +21,10 @@ import com.matiastibaldo.zattijoven2019.Fragmentos.Fascinar;
 import com.matiastibaldo.zattijoven2019.Fragmentos.Ficha1;
 import com.matiastibaldo.zattijoven2019.Fragmentos.Ficha2;
 import com.matiastibaldo.zattijoven2019.Fragmentos.Ficha3;
-import com.matiastibaldo.zattijoven2019.Fragmentos.MapArn;
-import com.matiastibaldo.zattijoven2019.Fragmentos.MapTucuman;
-import com.matiastibaldo.zattijoven2019.Fragmentos.Novedades;
+import com.matiastibaldo.zattijoven2019.Fragmentos.Home;
+import com.matiastibaldo.zattijoven2019.Fragmentos.CancioneroMeditacion;
+import com.matiastibaldo.zattijoven2019.Fragmentos.Oracion1;
+import com.matiastibaldo.zattijoven2019.Fragmentos.Oracion2;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -35,14 +36,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View view) {
-////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-////                        .setAction("Action", null).show();
-////            }
-////        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -54,8 +47,9 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-         CargarFragmento(new Ficha1());
-//        navigationView.getMenu().getItem(0).setChecked(true);
+          CargarFragmento(new Home());
+        navigationView.getMenu().getItem(0).setChecked(false);
+//       navigationView.getMenu().getItem(0).setChecked(true);
 
     }
 
@@ -76,20 +70,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -100,31 +80,32 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_fascinar) {
             CargarFragmento(new Fascinar());
-            item.setChecked(true);
+//            item.setChecked(true);
         } else if (id == R.id.nav_escuchar) {
             CargarFragmento(new Escuchar());
-            item.setChecked(true);
+//            item.setChecked(true);
         } else if (id == R.id.nav_discernir) {
             CargarFragmento(new Discernir());
         } else if (id == R.id.nav_convertirnos) {
             CargarFragmento(new Convertirnos());
         } else if (id == R.id.nav_cronograma) {
             CargarFragmento(new Cronograma());
-        } else if (id == R.id.nav_canciones) {
-            CargarFragmento(new Canciones());
-        } else if (id == R.id.nav_novedades) {
-            CargarFragmento(new Novedades());
-        }else if (id == R.id.nav_map_tucuman) {
-            CargarFragmento(new MapTucuman());
-        } else if (id == R.id.nav_map_arn) {
-            CargarFragmento(new MapArn());
+        } else if (id == R.id.nav_cancionero_animacion) {
+            CargarFragmento(new CancioneroAnimacion());
+        } else if (id == R.id.nav_cancionero_meditacion) {
+            CargarFragmento(new CancioneroMeditacion());
         }else if (id == R.id.nav_ficha1) {
             CargarFragmento(new Ficha1());
         }else if (id == R.id.nav_ficha2) {
             CargarFragmento(new Ficha2());
         }else if (id == R.id.nav_ficha3) {
             CargarFragmento(new Ficha3());
+        }else if (id == R.id.nav_oracion1) {
+            CargarFragmento(new Oracion1());
+        }else if (id == R.id.nav_oracion2) {
+            CargarFragmento(new Oracion2());
         }
+
 
 
 

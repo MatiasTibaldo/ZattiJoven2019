@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.barteksc.pdfviewer.PDFView;
 import com.matiastibaldo.zattijoven2019.R;
 
 /**
@@ -27,4 +28,22 @@ public class Fascinar extends Fragment {
         return inflater.inflate(R.layout.fascinar, container, false);
     }
 
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        super.onCreate(savedInstanceState);
+        Bundle bundle = this.getArguments();
+
+        PDFView pdfView = (PDFView) getView().findViewById(R.id.pdfViewFascinar);
+        pdfView.fromAsset("FASCINAR zatti 2019.pdf")
+                .enableSwipe(true) // allows to block changing pages using swipe
+                .enableDoubletap(true)
+                .defaultPage(0)
+                .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
+                .password(null)
+                .enableAntialiasing(true) // improve rendering a little bit on low-res screens
+                // spacing between pages in dp. To define spacing color, set view background
+                .spacing(0)
+                .load();
+    }
 }

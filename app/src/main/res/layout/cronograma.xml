@@ -6,9 +6,10 @@
     tools:context=".Fragmentos.Cronograma">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfViewCronograma"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CRONOGRAMA" />
+        android:layout_height="match_parent" />
+
 
 </FrameLayout>
